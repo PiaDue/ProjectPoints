@@ -9,14 +9,9 @@ html(lang='en')
     nav
       div
         a(href='/TMProject/Projects?username='+encodedUsername) &#x2B05;&#xFE0E; cancel
-        p user: #{name}
     .formula
       form(method='POST', action='/TMProject/AddProject?user='+encodedUsername)
         h1 Add Project
-        p.tutorial
-          em
-            | For successfully adding a new project, please fill out the forms. After submitting,
-            | you can add the tasks.
         label(for='name') project name
         input#name(type='text', name='name', placeholder='new project', required)
         br
@@ -28,7 +23,7 @@ html(lang='en')
           input(type='text', name='member2', placeholder='username')
           input(type='text', name='member3', placeholder='username')
           input(type='text', name='member4', placeholder='username')
-        input.submit(type='submit', value='submit')
+        input.submit(type='submit')
   style.
     @import url(https://fonts.googleapis.com/css?family=Roboto:300);
     html,
@@ -111,16 +106,7 @@ html(lang='en')
     flex-direction: column;
     align-items: center;
     }
-    .submit {
-    color: white;
-    background-color: rgb(153, 212, 253);
-    width: 15vh;
-    height: 4.5vh;
-    margin: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 12px;
-    }
+
     .submit:hover {
     transition: 0.5s ease;
     transform: scale(1.1);

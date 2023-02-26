@@ -34,6 +34,8 @@ public class TaskController {
             Connection con = DBConnection.getConnection();
             Task selectedTask = TaskDataProvider.selectTask(con, taskId);
             int responsiblePersonID = selectedTask.getResponsiblePersonId();
+            UserAccount currentUser = UserDataProvider.selectUser(con, username);
+            model.put("totalPoints", currentUser.getTotalPoints());
             UserAccount responsibleUser = UserDataProvider.selectUserByID(con, responsiblePersonID);
             DBConnection.disconnect(con);
 

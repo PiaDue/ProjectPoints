@@ -74,6 +74,7 @@ public class ProjectController {
             model.put("encodedUsername", URLEncoder.encode(userName, StandardCharsets.UTF_8.toString()));
 
             Connection con = DBConnection.getConnection();
+            UserAccount currentUser = UserDataProvider.selectUser(con, userName);
             Project sectedProject = ProjectDataProvider.selectProject(con, projectID);
             List<Task> tasks = TaskDataProvider.selectAllTasksOfProject(con, projectID);
             List<UserAccount> members = UserDataProvider.selectAllUsersOfProject(con, projectID);
@@ -95,6 +96,7 @@ public class ProjectController {
             model.put("project", sectedProject);
             model.put("tasks", tasks);
             model.put("members", members);
+            model.put("totalPoints", currentUser.getTotalPoints());
 
             ModelAndView modelAndView = new ModelAndView(model, "ProjectOverview");
             return modelAndView;
