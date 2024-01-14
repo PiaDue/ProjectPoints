@@ -1,6 +1,10 @@
 # TimeManagement Challenge
 Group-Project-Manager challenging all teammates to win the productivity challenge
 
+Idea: 
+- Users earn points as they complete tasks within projects
+- Transform mundane tasks into an engaging challenge, fostering a collaborative and productive environment
+
 <img width="1197" alt="Bildschirm­foto 2023-02-26 um 12 08 26" src="https://user-images.githubusercontent.com/89213910/221425147-235d9259-68be-44bb-a5cd-f89fa9f8e06b.png">
 <img width="1197" alt="Bildschirm­foto 2023-02-26 um 17 51 25" src="https://user-images.githubusercontent.com/89213910/221425159-a0e989df-53ba-47f0-a600-7b0341d018d3.png">
 <img width="1197" alt="Bildschirm­foto 2023-02-26 um 17 51 34" src="https://user-images.githubusercontent.com/89213910/221425164-cb45efe6-e482-4160-b0e0-f689976bc414.png">
