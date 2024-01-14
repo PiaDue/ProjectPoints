@@ -1,6 +1,17 @@
 # TimeManagement Challenge
 Group-Project-Manager challenging all teammates to win the productivity challenge
 
+Semester 3 Project (B.Sc. International Media and Computer Science at HTW Berlin)
+
+Course: Computer Science 3
+
+3 Contributors: Sina Han, Sonsiri Sotai, Pia Dünow
+
+TechStack: Java, Spark Framework, MySQL DB
+
+Original Repo: https://github.com/snahn2209/TiMaPro
+
+
 Idea: 
 - Users earn points as they complete tasks within projects
 - Transform mundane tasks into an engaging challenge, fostering a collaborative and productive environment
